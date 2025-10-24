@@ -10,6 +10,7 @@ public class PracticeProblem {
 	public static ArrayList<String> perms (String word) {
 		ArrayList<String> result = new ArrayList<>();
 		if (word == null || word.isEmpty()) {
+			result.add("");
 			return result;
 		}
 		allPerms(word.toCharArray(), 0, result);
